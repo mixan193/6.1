@@ -29,8 +29,8 @@ namespace _6._1
                 dateOfBirth = EnterDate();
                 Console.WriteLine("Введите место рождения ");
                 placeOfBirth = EnterString();
-                Employee employer = new Employee(id, dateTime, fullName, height, dateOfBirth, placeOfBirth);
-                dBHandler.AddEmployerToDB(employer.EmployerToString());
+                Employee employee = new Employee(id, dateTime, fullName, height, dateOfBirth, placeOfBirth);
+                dBHandler.AddEmployeeToDB(employee.EmployeeToString());
             }
         }
 

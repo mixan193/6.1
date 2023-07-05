@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _6._1
 {
-    internal class Employer
+    internal class Employee
     {
         private int id;
         private DateTime dateTime = DateTime.Now;
@@ -15,7 +15,7 @@ namespace _6._1
         private int height;
         private DateTime dateOfBirth;
         private string placeOfBirth;
-        public Employer(int id, DateTime dateTime, string fullName, int height, DateTime dateOfBirth, string placeOfBirth)
+        public Employee(int id, DateTime dateTime, string fullName, int height, DateTime dateOfBirth, string placeOfBirth)
         {
             this.id = id;
             this.dateTime = dateTime;
@@ -26,7 +26,7 @@ namespace _6._1
             this.placeOfBirth = placeOfBirth;
         }
 
-        public string EmployerToString()
+        public string EmployeeToString()
         {
             string result = string.Empty;
             result += id.ToString() + "#";

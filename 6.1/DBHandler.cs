@@ -10,8 +10,8 @@ namespace _6._1
     internal class DBHandler
     {
         private string pathToDBFile;
-        private int employersCount;
-        public int EmployersCount
+        private int employeesCount;
+        public int EmployeesCount
         {
             get;
             private set;
@@ -23,11 +23,11 @@ namespace _6._1
             {
                 FileStream fs = new FileStream(pathToDBFile, FileMode.Create);
                 fs.Close();
-                employersCount = 0;
+                employeesCount = 0;
             }
             else
             {
-                employersCount = GetLastID();
+                employeesCount = GetLastID();
             }
         }
 
@@ -37,7 +37,7 @@ namespace _6._1
         }
 
 
-        public bool AddEmployerToDB(string employer)
+        public bool AddEmployeeToDB(string employer)
         {
             try
             {
