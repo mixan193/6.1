@@ -29,7 +29,7 @@ namespace _6._1
                 dateOfBirth = EnterDate();
                 Console.WriteLine("Введите место рождения ");
                 placeOfBirth = EnterString();
-                Employer employer = new Employer(id, dateTime, fullName, height, dateOfBirth, placeOfBirth);
+                Employee employer = new Employee(id, dateTime, fullName, height, dateOfBirth, placeOfBirth);
                 dBHandler.AddEmployerToDB(employer.EmployerToString());
             }
         }
